@@ -40,7 +40,7 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
 
-  const port = 4231;
+  const port = 443;
   await app.listen(port, () => {
     logger.log(`Application listening on port ${port}`);
   });
